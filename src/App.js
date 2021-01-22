@@ -9,7 +9,7 @@ import Total from './components/Total';
 import { initialState, reducer } from './reducer.js';
 
 const App = (props) => {
-
+  console.log(props);
   return (
     <div className="boxes">
       <div className="box">
@@ -29,7 +29,7 @@ const mapStateToProps = (state) => {
     additionalPrice: state.additionalPrice,
     car: state.car,
     additionalFeatures: state.additionalFeatures,
-  }
+  };
 };
 const mapDispatchToProps = {removeFeature, addFeature};
 

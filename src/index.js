@@ -10,9 +10,7 @@ import devToolsEnhancer from 'remote-redux-devtools';
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
-const store = createStore(
-    reducer, devToolsEnhancer()
-);
+const store = createStore( reducer, devToolsEnhancer());
 
 const rootElement = document.getElementById('root');
 ReactDOM.render( 
